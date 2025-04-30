@@ -1,2 +1,3 @@
-# TG_maquette2
-travail de groupe sur le mini site
+# Mon projet Web
+Ce dépôt contient ma maquette responsive.
+travail de groupe sur la conception d'un mini site.
