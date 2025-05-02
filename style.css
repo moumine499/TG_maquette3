@@ -16,7 +16,10 @@
     align-items: center; 
     background-color: #333;
     color: white; 
-    padding: 15px 30px; 
+    padding: 15px 700px; 
+    position: fixed;
+    z-index: 100; /* Assure que l'en-tête reste au-dessus des autres éléments */
+   
   }
   
   .logo a {
@@ -89,6 +92,7 @@
     justify-content: space-between; /* Espacement entre les éléments */
     align-items: center; /* Centrer verticalement */
     padding: 20px; /* Espacement interne */
+    margin-bottom: 100px; /* Marge en bas */
   }
   
   /* Style pour un bloc à l'intérieur de la section 1 */
@@ -225,6 +229,7 @@
   .slide {
     display: none; /* Les slides sont cachés par défaut */
     text-align: center; /* Centrer le texte */
+    
   }
   
   /* Image dans chaque slide */
@@ -232,4 +237,5 @@
     border-radius: 20px; /* Bordures arrondies */
     width: 700px; /* Largeur fixe */
     height: 400px; /* Hauteur fixe */
+    
   }

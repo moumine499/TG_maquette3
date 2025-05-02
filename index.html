@@ -17,7 +17,7 @@
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Trod</a></li>
-          <li><a href="#">Card : 0</a></li>
+          <li><span id="quantite">Card : 0</span></li>
         </ul>
       </nav>
     </header>
@@ -29,6 +29,7 @@
             <div class="bloc1">
               <div class="slideshow-container">
                 <div class="slide fade">
+                 
                   <img
                     src="images/m1.png"
                     alt="Image 1"
@@ -37,6 +38,7 @@
                   />
                 </div>
                 <div class="slide">
+                 
                   <img
                     src="images/m2.png"
                     alt="Image 2"
@@ -45,6 +47,7 @@
                   />
                 </div>
                 <div class="slide">
+                 
                   <img
                     src="images/m3.png"
                     alt="Image 3"
@@ -53,6 +56,7 @@
                   />
                 </div>
                 <div class="slide">
+                
                   <img
                     src="images/m4.png"
                     alt="Image 4"
@@ -61,6 +65,7 @@
                   />
                 </div>
                 <div class="slide">
+                
                   <img
                     src="images/m5.png"
                     alt="Image 5"
@@ -69,6 +74,7 @@
                   />
                 </div>
                 <div class="slide">
+                  
                   <img
                     src="images/m6.png"
                     alt="Image 6"
@@ -159,50 +165,70 @@
       <section class="section-produits">
         <div class="ligne">
           <div class="bloc4">
+             
             <img src="images/10.jpg" alt="" />
-            <button><a href="#">ajouter au panier</a></button>
+            Créme
+            
+            <button onclick="ajouterPanier('Creme')">Ajouter au panier</button>
           </div>
+          
           <div class="bloc4">
             <img src="images/6.jpeg" alt="" />
-            <button><a href="#">ajouter au panier</a></button>
+            Libs
+           
+            <button onclick="ajouterPanier('Libs')">Ajouter au panier</button>
           </div>
           <div class="bloc4">
             <img src="images/9.jpeg" alt="" />
-            <button><a href="#">ajouter au panier</a></button>
+            Maquillage
+           
+            <button onclick="ajouterPanier('Maquillage')">Ajouter au panier</button>
           </div>
           <div class="bloc4">
             <img src="images/4.jpg" alt="" />
-            <button><a href="#">ajouter au panier</a></button>
+            Rouge à levre
+           
+            <button onclick="ajouterPanier('Rouge à levre')">Ajouter au panier</button>
           </div>
           <div class="bloc4">
             <img src="images/5.jpg" alt="" />
-            <button><a href="#">ajouter au panier</a></button>
+             Paue
+             
+             <button onclick="ajouterPanier('Peau')">Ajouter au panier</button>
           </div>
         </div>
-
+            
+            
         <div class="ligne">
           <div class="bloc4">
             <img src="images/6.jpeg" alt="" />
-            <button><a href="#">ajouter au panier</a></button>
+           
+            <button onclick="ajouterPanier('Gomme')">Ajouter au panier</button>
           </div>
           <div class="bloc4">
             <img src="images/7.jpeg" alt="" />
-            <button><a href="#">ajouter au panier</a></button>
+            
+            <button onclick="ajouterPanier('Teint')">Ajouter au panier</button>
           </div>
           <div class="bloc4">
             <img src="images/8.png" alt="" />
-            <button><a href="#">ajouter au panier</a></button>
+           
+            <button onclick="ajouterPanier('Levre')">Ajouter au panier</button>
           </div>
           <div class="bloc4">
             <img src="images/9.jpeg" alt="" />
-            <button><a href="#">ajouter au panier</a></button>
+          
+            <button onclick="ajouterPanier('Scille')">Ajouter au panier</button>
           </div>
           <div class="bloc4">
             <img src="images/10.jpg" alt="" />
-            <button><a href="#">ajouter au panier</a></button>
+            
+            <button onclick="ajouterPanier('Brosse')">Ajouter au panier</button>
           </div>
         </div>
+        
       </section>
+
 
       <section class="section6">
         <div class="container">
@@ -261,31 +287,21 @@
           <div class="bloc5">
             <h6>Réseaux sociaux</h6>
             <div class="whatsapp">
-              <i class="fas fa-whatsapp whatsapp-icon"></i>
+              <i class="fas fa-whatsapp whatsapp-icon">whatsapp: +235 68 10 17 97</i>
+            </div>
+            <div>
+              <i class="fas fa-whatsapp whatsapp-icon">Facebook : make-up</i>
+            </div>
+            <div>
+              <i class="fas fa-whatsapp whatsapp-icon">Instagrame : make-up235</i>
             </div>
           </div>
         </section>
       </div>
     </footer>
 
-    <script>
-      let slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        const slides = document.getElementsByClassName("slide");
-        for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 3000); // Change d'image toutes les 3 secondes
-      }
+    <script src="slide.js">
+      
     </script>
   </body>
 </html>
